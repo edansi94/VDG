@@ -21,7 +21,6 @@ public class PlayerAnim : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        
         anim.SetInteger("Horizontal", Convert.ToInt32(objetivo.velocity.x > minVelDeteccion) - Convert.ToInt32(objetivo.velocity.x < -minVelDeteccion));
         anim.SetInteger("Vertical", Convert.ToInt32(objetivo.velocity.y > minVelDeteccion) - Convert.ToInt32(objetivo.velocity.y < -minVelDeteccion));
         
