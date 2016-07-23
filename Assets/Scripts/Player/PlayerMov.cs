@@ -4,10 +4,10 @@ using System.Collections;
 public class PlayerMov : MonoBehaviour {
 
     [SerializeField]
-    string inputNameHor = "Horizontal";
+    public string inputNameHor = "Horizontal";
 
     [SerializeField]
-    const string inputNameVer = "Vertical";
+    public string inputNameVer = "Vertical";
 
     [SerializeField]
     float fuerza = 5f;
