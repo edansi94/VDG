@@ -12,7 +12,6 @@ public class PlayerMov : MonoBehaviour {
     [SerializeField]
     float fuerza = 5f;
 
-
     private Rigidbody2D body;
     private Vector2 dir;
 

@@ -7,20 +7,17 @@ public class Camara : MonoBehaviour {
     Transform objetivo;
 
     [SerializeField]
-    float velocidad = 2f;
-
-    [SerializeField]
     float deltaMin = 0.1F;
 
+    [SerializeField]
+    float lerpDuration = 3f;
+
     private float starTime;
-    private float journeyLength;
+    
 
     private bool moving;
     private Vector3 posO;
 
-    void Start() {
-        velocidad /= 100f;
-    }
 	void FixedUpdate () {
         if (moving)
         {
@@ -28,9 +25,7 @@ public class Camara : MonoBehaviour {
             Vector3 temp = new Vector3(objetivo.position.x, objetivo.position.y, transform.position.z);
             if (Vector3.Distance(posO, temp) > deltaMin)
             {
-                //starTime = Time.time;
                 posO = temp;
-                journeyLength = Vector3.Distance(posO, transform.position);
             }
 
             // Dejar de pensar que se mueve si ya esta muy cerca
@@ -40,8 +35,9 @@ public class Camara : MonoBehaviour {
             }
             else
             {
-                float fractJourney = (Time.time - starTime) * velocidad / journeyLength;
-                transform.position = Vector3.SlerpUnclamped(transform.position, posO, fractJourney);
+                float t = (Time.time - starTime) / lerpDuration;
+                float fractJourney = t * t * t * (t * (t * 6f - 15f) + 10f);
+                transform.position = Vector3.LerpUnclamped(transform.position, posO, fractJourney);
             }
         }
         else
@@ -51,7 +47,6 @@ public class Camara : MonoBehaviour {
             {
                 starTime = Time.time;
                 posO = temp;
-                journeyLength = Vector3.Distance(posO, transform.position);
                 moving = true;
             }
         }
