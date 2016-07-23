@@ -48,17 +48,8 @@ public class Puerta : MonoBehaviour, I_Interactuable {
     void I_Interactuable.SuperInteract()
     {
         abierto = !abierto;
-        if (abierto)
-        {
-            anim.SetTrigger("Interactuar");
-            puertaFisica.isTrigger = true;
-            
-        }
-        else
-        {
-            anim.SetTrigger("Interactuar");
-            puertaFisica.isTrigger = false;
-        }
+        anim.SetTrigger("Interactuar");
+        puertaFisica.isTrigger = abierto;
         interactuado = true;
     }
 

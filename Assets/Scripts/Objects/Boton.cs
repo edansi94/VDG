@@ -1,13 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Bombillo : MonoBehaviour, I_Interactuable {
+public class Boton : MonoBehaviour, I_Interactuable {
+
+    [SerializeField]
+    [Tooltip("Recordar que tienen que implementar I_Interactuable")]
+    MonoBehaviour[] objetosAPrender;
 
     [SerializeField]
     bool oneWay = false;
 
     [SerializeField]
     bool encendido = false;
+
+    [SerializeField]
+    bool superBoton = false;
 
     bool I_Interactuable.on { get { return encendido; } }
 
@@ -39,6 +46,17 @@ public class Bombillo : MonoBehaviour, I_Interactuable {
     {
         encendido = !encendido;
         anim.SetTrigger("Interactuar");
+        for (int i = 0; i < objetosAPrender.Length; i++)
+        {
+            if (superBoton)
+            {
+                ((I_Interactuable)objetosAPrender[i]).SuperInteract();
+            }
+            else
+            {
+                ((I_Interactuable)objetosAPrender[i]).Interact();
+            }
+        }
         interactuado = true;
     }
 
