@@ -35,7 +35,7 @@ public class Camara : MonoBehaviour {
             }
             else
             {
-                float t = (Time.time - starTime) / lerpDuration;
+                float t = Mathf.Clamp((Time.time - starTime) / lerpDuration, 0f, 1f);
                 float fractJourney = t * t * t * (t * (t * 6f - 15f) + 10f);
                 transform.position = Vector3.LerpUnclamped(transform.position, posO, fractJourney);
             }
