@@ -8,7 +8,7 @@ public class globalSettings : MonoBehaviour {
 	public class playerSettings
 	{
 		public int soulAmount = 0; // This will be the amount of souls we have.
-		public int energy = 100;    // This will be the player's life.
+		public int energy = 10;    // This will be the player's life.
 
 		public int SoulAmount
 		{
