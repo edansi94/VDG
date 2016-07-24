@@ -152,7 +152,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: you lost in the oblivion...
+  m_Text: you are lost in the oblivion...
 --- !u!222 &295699115
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -261,6 +261,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fdb2cf6b33d7d447a8501e340727840, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneInicial: Inicio
+  reiniciar: 1
 --- !u!114 &337591961
 MonoBehaviour:
   m_ObjectHideFlags: 0
