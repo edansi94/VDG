@@ -31,6 +31,15 @@ public class memoriesManager : MonoBehaviour {
         }
     }
 
+	void elegirRecuerdo(int noRecuerdo) {
+		if (level < 5) 
+		{
+			chosenMemories [level] = noRecuerdo;
+			level++;
+			SceneManager.LoadScene (loadingScene);
+		}
+	}
+
     public string sceneToLoad() {
         return levelScene[level];
     }
