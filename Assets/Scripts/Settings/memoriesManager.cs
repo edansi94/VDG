@@ -16,6 +16,18 @@ public class memoriesManager : MonoBehaviour {
 
     int[] chosenMemories = new int[4];
 
+    [SerializeField]
+    Vector3 puntoSpawn0 = Vector3.zero;
+
+    [SerializeField]
+    Vector3[] puntosSpawn1 = new Vector3[1];
+
+    [SerializeField]
+    Vector3[] puntosSpawn2 = new Vector3[1];
+
+    [SerializeField]
+    Vector3[] puntosSpawn3 = new Vector3[1];
+
     void Awake()
     {
         DontDestroyOnLoad(transform.gameObject);
@@ -48,5 +60,21 @@ public class memoriesManager : MonoBehaviour {
 
     public int[] memoriasEscogidas() {
         return chosenMemories;
+    }
+
+    public Vector3 dondeAparecer() {
+        switch (level)
+        {
+            case 0:
+                return puntoSpawn0;
+            case 1:
+                return puntosSpawn1[chosenMemories[0]];
+            case 2:
+                return puntosSpawn2[chosenMemories[1]];
+            case 3:
+                return puntosSpawn3[chosenMemories[2]];
+            default:
+                return Vector3.zero;
+        }
     }
 }
