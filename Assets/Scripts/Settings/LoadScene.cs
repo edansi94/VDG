@@ -35,6 +35,13 @@ public class LoadScene : MonoBehaviour {
         {
             yield return null;
         }
+        float fadeTime = GameObject.Find("Main Camera").GetComponent<Fading>().BeginFade(1);
+        StartCoroutine(FadeEffect(fadeTime * 2));
+    }
+
+    public IEnumerator FadeEffect(float fadeTime)
+    {
+        yield return new WaitForSeconds(fadeTime);
     }
 
 }
