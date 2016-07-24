@@ -261,6 +261,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fdb2cf6b33d7d447a8501e340727840, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneInicial: Inicio
+  reiniciar: 0
 --- !u!114 &337591961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,7 +364,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1 &1324224552
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,7 +671,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 487020, guid: 4e7c15155b51fc6459306211c9a119cd, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e7c15155b51fc6459306211c9a119cd, type: 2}
