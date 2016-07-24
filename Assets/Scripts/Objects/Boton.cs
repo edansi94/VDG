@@ -24,9 +24,15 @@ public class Boton : MonoBehaviour, I_Interactuable {
     bool I_Interactuable.interactuado { get { return interactuado; } set { interactuado = value; } }
 
     private Animator anim;
+
+    [SerializeField]
+    AudioClip click;
+
+    private AudioSource fuente;
     // Use this for initialization
     void Start()
     {
+        fuente = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
         if (encendido)
         {
@@ -57,6 +63,7 @@ public class Boton : MonoBehaviour, I_Interactuable {
                 ((I_Interactuable)objetosAPrender[i]).Interact();
             }
         }
+        fuente.PlayOneShot(click);
         interactuado = true;
     }
 
