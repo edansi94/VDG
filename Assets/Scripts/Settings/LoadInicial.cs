@@ -28,6 +28,7 @@ public class LoadInicial : MonoBehaviour {
         {
             Destroy(GameObject.Find("MemoriesManager"));
             Destroy(GameObject.Find("BackgroundSound"));
+            globalSettings.playerSettings.setEnergy(100);
             SceneManager.LoadScene(sceneInicial);
         }
 
