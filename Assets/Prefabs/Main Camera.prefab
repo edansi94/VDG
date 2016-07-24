@@ -17,6 +17,7 @@ GameObject:
   - 114: {fileID: 11487612}
   - 114: {fileID: 11480328}
   - 114: {fileID: 11420312}
+  - 114: {fileID: 11421170}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -112,6 +113,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeOutTexture: {fileID: 2800000, guid: 7965c407db718a64d881899d7f15ad4d, type: 3}
   fadeSpeed: 0.8
+--- !u!114 &11421170
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 118332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620cc185c12fa3c4fb6a678764e908b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  healthSlider: {fileID: 0}
+  damageImage: {fileID: 0}
+  flashSpeed: 5
+  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
 --- !u!114 &11477094
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -123,9 +140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d89603616cec24aaba7c6406c2f0b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerSettings:
-    memoryAmount: 0
-    energy: 100
 --- !u!114 &11480328
 MonoBehaviour:
   m_ObjectHideFlags: 1

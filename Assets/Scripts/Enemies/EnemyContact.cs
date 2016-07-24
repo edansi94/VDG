@@ -4,14 +4,12 @@ using System.Collections;
 public class EnemyContact : MonoBehaviour {
 
 	GameObject globalM;
-	globalSettings.playerSettings PlayerSettings;
 	PlayerHealth health;
 
 	void Start()
 	{
 		globalM = GameObject.FindGameObjectWithTag ("MainCamera");
 		health = globalM.GetComponent<PlayerHealth> ();
-		PlayerSettings = globalM.GetComponent<globalSettings> ().PlayerSettings;
 	}
 
 
@@ -20,7 +18,7 @@ public class EnemyContact : MonoBehaviour {
 		if (collision.gameObject.tag == "Player") {
 			health.TakeDamage (10);
 			// If the player does not have enemy, the player dies.
-			if (PlayerSettings.Energy == 0) 
+			if (globalSettings.playerSettings.Energy == 0) 
 			{
 				Destroy (collision.gameObject);
 			}

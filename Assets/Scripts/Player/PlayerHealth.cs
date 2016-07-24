@@ -4,10 +4,7 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour {
-
-	private GameObject globalE;
-	private globalSettings.playerSettings PlayerSettings;
-
+    
 	public int currentHealth;
 	public Slider healthSlider;
 	public Image damageImage;
@@ -18,10 +15,9 @@ public class PlayerHealth : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		globalE = GameObject.FindGameObjectWithTag ("MainCamera");
-		PlayerSettings = globalE.GetComponent<globalSettings> ().PlayerSettings;
-		currentHealth  = PlayerSettings.Energy;
-	}
+		currentHealth  = globalSettings.playerSettings.Energy;
+        healthSlider.value = currentHealth;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -31,9 +27,9 @@ public class PlayerHealth : MonoBehaviour {
 	{
 		damaged = true;
 		currentHealth -= amount;
-		PlayerSettings.setEnergy (-amount);
+        globalSettings.playerSettings.setEnergy (-amount);
 		healthSlider.value = currentHealth;
-		Debug.Log (PlayerSettings.Energy);
+		//Debug.Log (globalSettings.playerSettings.Energy);
 		if (currentHealth <= 0) {
 			float fadeTime = GameObject.Find ("Main Camera").GetComponent<Fading> ().BeginFade (1);
 			StartCoroutine (FadeEffect (fadeTime  * 2));
