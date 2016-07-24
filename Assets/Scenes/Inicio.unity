@@ -98,6 +98,8 @@ GameObject:
   - 124: {fileID: 337591956}
   - 81: {fileID: 337591955}
   - 114: {fileID: 337591960}
+  - 114: {fileID: 337591962}
+  - 114: {fileID: 337591961}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -184,6 +186,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fdb2cf6b33d7d447a8501e340727840, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &337591961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 337591954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f727be536a0901147b0dda8c1e406315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curShader: {fileID: 4800000, guid: bb429141792243a4ba7fb4002c5eebfe, type: 3}
+  grayScaleAmount: 0.3
+--- !u!114 &337591962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 337591954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f444bc58957f6eb4cb2ef9293565683d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curShader: {fileID: 4800000, guid: 93b18a79f0c0d8e4da4b92c895c24be5, type: 3}
+  blendTexture: {fileID: 2800000, guid: 8f34b62ecda0ce041a46ad24cda39b87, type: 3}
+  blendOpacity: 1
 --- !u!1001 &1405729198
 Prefab:
   m_ObjectHideFlags: 0
