@@ -23,7 +23,6 @@ public class memoryInteraction : MonoBehaviour {
 		if (collision.gameObject.tag == "Player") {
             manager.elegirRecuerdo(id);
             PlayerSettings.setMemoryAmount (10);
-			print (PlayerSettings.memoryAmount);
 			Destroy (this.gameObject);
 		}
 	}
