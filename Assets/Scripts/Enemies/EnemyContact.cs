@@ -5,10 +5,12 @@ public class EnemyContact : MonoBehaviour {
 
 	GameObject globalM;
 	globalSettings.playerSettings PlayerSettings;
+	PlayerHealth health;
 
 	void Start()
 	{
 		globalM = GameObject.FindGameObjectWithTag ("MainCamera");
+		health = globalM.GetComponent<PlayerHealth> ();
 		PlayerSettings = globalM.GetComponent<globalSettings> ().PlayerSettings;
 	}
 
@@ -16,9 +18,7 @@ public class EnemyContact : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D collision)
 	{
 		if (collision.gameObject.tag == "Player") {
-			PlayerSettings.setEnergy (-10);
-			print (PlayerSettings.Energy);
-
+			health.TakeDamage (10);
 			// If the player does not have enemy, the player dies.
 			if (PlayerSettings.Energy == 0) 
 			{
