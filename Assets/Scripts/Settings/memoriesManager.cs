@@ -34,4 +34,8 @@ public class memoriesManager : MonoBehaviour {
     public string sceneToLoad() {
         return levelScene[level];
     }
+
+    public int[] memoriasEscogidas() {
+        return chosenMemories;
+    }
 }
