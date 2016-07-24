@@ -23,8 +23,6 @@ public class energyRecipe : MonoBehaviour, I_Interactuable
 
     private Animator anim;
 
-    // Manejo Energia
-    private globalSettings.playerSettings PlayerSettings;
 
     [SerializeField]
     int cantidadAQuitar = 10;
@@ -33,7 +31,6 @@ public class energyRecipe : MonoBehaviour, I_Interactuable
     void Start()
     {
         anim = GetComponent<Animator>();
-        PlayerSettings = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<globalSettings>().PlayerSettings;
         if (encendido)
         {
             anim.SetTrigger("Interactuar");
@@ -53,7 +50,7 @@ public class energyRecipe : MonoBehaviour, I_Interactuable
         encendido = !encendido;
         anim.SetTrigger("Interactuar");
         // Aqui se quita la energia
-        PlayerSettings.setEnergy(cantidadAQuitar);
+        globalSettings.playerSettings.setEnergy(cantidadAQuitar);
         interactuado = true;
     }
 
