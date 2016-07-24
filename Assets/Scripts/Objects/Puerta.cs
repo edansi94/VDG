@@ -23,10 +23,15 @@ public class Puerta : MonoBehaviour, I_Interactuable {
 
     private Animator anim;
 
+    [SerializeField]
+    AudioClip cerrar;
+
+    private AudioSource fuente;
 
     // Use this for initialization
     void Start () {
         anim = GetComponent<Animator>();
+        fuente = GetComponent<AudioSource>();
         if (abierto)
         {
             anim.SetTrigger("Interactuar");
@@ -66,5 +71,9 @@ public class Puerta : MonoBehaviour, I_Interactuable {
         {
             other.GetComponent<Interact>().salir((I_Interactuable)this);
         }
+    }
+
+    public void sonidoCerrar() {
+        fuente.PlayOneShot(cerrar);
     }
 }
