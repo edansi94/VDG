@@ -1062,22 +1062,6 @@ Prefab:
       propertyPath: objetivo
       value: 
       objectReference: {fileID: 1520284275}
-    - target: {fileID: 2043154, guid: 4218c05a14b416949ad9743613653a81, type: 2}
-      propertyPath: orthographic size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2043154, guid: 4218c05a14b416949ad9743613653a81, type: 2}
-      propertyPath: m_BackGroundColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2043154, guid: 4218c05a14b416949ad9743613653a81, type: 2}
-      propertyPath: m_BackGroundColor.g
-      value: 0.66896534
-      objectReference: {fileID: 0}
-    - target: {fileID: 2043154, guid: 4218c05a14b416949ad9743613653a81, type: 2}
-      propertyPath: m_BackGroundColor.b
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4218c05a14b416949ad9743613653a81, type: 2}
   m_IsPrefabParent: 0
