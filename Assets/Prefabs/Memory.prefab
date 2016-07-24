@@ -12,7 +12,7 @@ GameObject:
   - 114: {fileID: 11415808}
   - 61: {fileID: 6137984}
   m_Layer: 0
-  m_Name: Soul
+  m_Name: Memory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53,9 +53,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 104140}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c492e6dacd1b8149a92f7fe3895cdf2, type: 3}
+  m_Script: {fileID: 11500000, guid: e93da39480cf4384aa79c931dd049413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  globalM: {fileID: 0}
+  PlayerSettings:
+    soulAmount: 0
+    energy: 10
 --- !u!212 &21224456
 SpriteRenderer:
   m_ObjectHideFlags: 1
