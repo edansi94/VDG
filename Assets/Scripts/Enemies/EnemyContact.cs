@@ -17,6 +17,7 @@ public class EnemyContact : MonoBehaviour {
 	{
 		if (collision.gameObject.tag == "Player") {
 			health.TakeDamage (10);
+            collision.transform.GetComponent<PlayerSound>().ouch();
 			// If the player does not have enemy, the player dies.
 			if (globalSettings.playerSettings.Energy == 0) 
 			{
