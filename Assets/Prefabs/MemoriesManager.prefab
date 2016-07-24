@@ -42,11 +42,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadingScene: Loading
   levelScene:
-  - Test
-  - Test
+  - World2
+  - Test 2
   - Final
   - 
-  - Final
+  - 
   level: 0
   puntoSpawn0: {x: 0, y: 0, z: 0}
   puntosSpawn1:
