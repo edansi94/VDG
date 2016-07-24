@@ -48,6 +48,14 @@ MonoBehaviour:
   - 
   - Final
   level: 0
+  puntoSpawn0: {x: 0, y: 0, z: 0}
+  puntosSpawn1:
+  - {x: 0, y: 0, z: 0}
+  - {x: 10, y: 10, z: 0}
+  puntosSpawn2:
+  - {x: 0, y: 0, z: 0}
+  puntosSpawn3:
+  - {x: 0, y: 0, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
