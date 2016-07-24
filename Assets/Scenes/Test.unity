@@ -746,6 +746,37 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4218c05a14b416949ad9743613653a81, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2000036665 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 118332, guid: 4218c05a14b416949ad9743613653a81, type: 2}
+  m_PrefabInternal: {fileID: 2000036664}
+--- !u!114 &2000036666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2000036665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f727be536a0901147b0dda8c1e406315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curShader: {fileID: 4800000, guid: bb429141792243a4ba7fb4002c5eebfe, type: 3}
+  grayScaleAmount: 0.3
+--- !u!114 &2000036667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2000036665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f444bc58957f6eb4cb2ef9293565683d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curShader: {fileID: 4800000, guid: 93b18a79f0c0d8e4da4b92c895c24be5, type: 3}
+  blendTexture: {fileID: 2800000, guid: dca6b5abcbc011140a7bf1ddc8219898, type: 3}
+  blendOpacity: 1
 --- !u!1001 &2107357092
 Prefab:
   m_ObjectHideFlags: 0
