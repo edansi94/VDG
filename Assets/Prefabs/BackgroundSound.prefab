@@ -117,6 +117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backMusic: {fileID: 8300000, guid: 90b9e523e985e884cb8f2f2a5464097f, type: 3}
   introMusic: {fileID: 8300000, guid: 0ec90627a21529542922628dce20858b, type: 3}
+  endMusic: {fileID: 8300000, guid: 1538c240e6985b547af844fe1e902bad, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

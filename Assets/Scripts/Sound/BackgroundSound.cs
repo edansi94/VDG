@@ -8,6 +8,8 @@ public class BackgroundSound : MonoBehaviour {
     AudioClip backMusic;
     [SerializeField]
     AudioClip introMusic;
+    [SerializeField]
+    AudioClip endMusic;
 
     void Start()
     {
@@ -23,6 +25,14 @@ public class BackgroundSound : MonoBehaviour {
             if (fxSound.clip != backMusic)
             {
                 fxSound.clip = backMusic;
+                fxSound.Play();
+            }
+        }
+        else if (level != SceneManager.GetSceneByName("Final").buildIndex)
+        {
+            if (fxSound.clip != endMusic)
+            {
+                fxSound.clip = endMusic;
                 fxSound.Play();
             }
         }
