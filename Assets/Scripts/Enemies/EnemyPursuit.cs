@@ -20,8 +20,14 @@ public class EnemyPursuit : MonoBehaviour {
     private Collider2D trigger;
     bool started = false;
     bool persiguiendo = false;
-	// Use this for initialization
-	void Start () {
+
+    [SerializeField]
+    AudioClip grito;
+
+    private AudioSource fuente;
+    // Use this for initialization
+    void Start () {
+        fuente = GetComponent<AudioSource>();
         if (!started)
         {
             body = transform.parent.GetComponent<Rigidbody2D>();
@@ -57,6 +63,7 @@ public class EnemyPursuit : MonoBehaviour {
         this.enabled = true;
         trigger.enabled = true;
         persiguiendo = true;
+        fuente.PlayOneShot(grito);
     }
 
     public void Apagar() {
