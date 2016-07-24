@@ -7,17 +7,17 @@ public class globalSettings : MonoBehaviour {
 	[Serializable]
 	public class playerSettings
 	{
-		public int soulAmount = 0; // This will be the amount of souls we have.
+		public int memoryAmount = 0; // This will be the amount of souls we have.
 		public int energy = 10;    // This will be the player's life.
 
 		public int SoulAmount
 		{
-			get { return soulAmount; }
+			get { return memoryAmount; }
 		}
 
-		public void setSoulAmount(int value)
+		public void setMemoryAmount(int value)
 		{
-			soulAmount += value;
+			memoryAmount += value;
 		}
 
 
