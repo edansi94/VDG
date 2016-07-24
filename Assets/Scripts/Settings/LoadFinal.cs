@@ -34,6 +34,7 @@ public class LoadFinal : MonoBehaviour {
         if (Input.GetButtonDown("Submit"))
         {
             Destroy(GameObject.Find("MemoriesManager"));
+            Destroy(GameObject.Find("BackgroundSound"));
             SceneManager.LoadScene(sceneInicial);
         }
     }
