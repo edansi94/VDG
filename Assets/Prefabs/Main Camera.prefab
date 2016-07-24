@@ -16,6 +16,7 @@ GameObject:
   - 114: {fileID: 11477094}
   - 114: {fileID: 11487612}
   - 114: {fileID: 11480328}
+  - 114: {fileID: 11420312}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -98,6 +99,19 @@ MonoBehaviour:
   objetivo: {fileID: 0}
   deltaMin: 0.01
   lerpDuration: 10
+--- !u!114 &11420312
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 118332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd372638d4aca4458a52de33e33cafc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeOutTexture: {fileID: 2800000, guid: 7965c407db718a64d881899d7f15ad4d, type: 3}
+  fadeSpeed: 0.8
 --- !u!114 &11477094
 MonoBehaviour:
   m_ObjectHideFlags: 1

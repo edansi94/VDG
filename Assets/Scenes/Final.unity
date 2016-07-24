@@ -336,6 +336,7 @@ GameObject:
   - 114: {fileID: 1873775996}
   - 114: {fileID: 1873775997}
   - 114: {fileID: 1873775998}
+  - 114: {fileID: 1873775999}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -469,3 +470,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   curShader: {fileID: 4800000, guid: bb429141792243a4ba7fb4002c5eebfe, type: 3}
   grayScaleAmount: 0.3
+--- !u!114 &1873775999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1873775990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd372638d4aca4458a52de33e33cafc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeOutTexture: {fileID: 2800000, guid: 7965c407db718a64d881899d7f15ad4d, type: 3}
+  fadeSpeed: 0.8

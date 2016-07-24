@@ -50,9 +50,16 @@ public class memoriesManager : MonoBehaviour {
         {
             chosenMemories[level] = noRecuerdo;
             level++;
+			float fadeTime = GameObject.Find ("Main Camera").GetComponent<Fading> ().BeginFade (1);
+			StartCoroutine (FadeEffect (fadeTime  * 2));
             SceneManager.LoadScene(loadingScene);
         }
     }
+
+	public IEnumerator FadeEffect(float fadeTime)
+	{
+		yield return new WaitForSeconds (fadeTime);
+	}
 
     public string sceneToLoad() {
         return levelScene[level];
