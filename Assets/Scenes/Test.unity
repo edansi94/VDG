@@ -694,22 +694,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d112d6d866a91dc4ab8451e036202415, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1844767251 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 199792, guid: 323e9a36d7a6de7419193630845ffdf7, type: 2}
-  m_PrefabInternal: {fileID: 588443995}
---- !u!114 &1844767252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1844767251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81ebabe721a3a364e875b89a18052086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minVelDeteccion: 1
 --- !u!114 &1949196160 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11490580, guid: ada9694d3feafef4da34402dffc446cf,
@@ -759,6 +743,22 @@ Prefab:
       propertyPath: objetivo
       value: 
       objectReference: {fileID: 1520284275}
+    - target: {fileID: 2043154, guid: 4218c05a14b416949ad9743613653a81, type: 2}
+      propertyPath: orthographic size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043154, guid: 4218c05a14b416949ad9743613653a81, type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043154, guid: 4218c05a14b416949ad9743613653a81, type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0.66896534
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043154, guid: 4218c05a14b416949ad9743613653a81, type: 2}
+      propertyPath: m_BackGroundColor.b
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4218c05a14b416949ad9743613653a81, type: 2}
   m_IsPrefabParent: 0
