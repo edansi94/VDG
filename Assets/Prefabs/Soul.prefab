@@ -47,6 +47,7 @@ GameObject:
   - 61: {fileID: 6149162}
   - 61: {fileID: 6148020}
   - 114: {fileID: 11436772}
+  - 95: {fileID: 9564106}
   m_Layer: 0
   m_Name: Soul
   m_TagString: Untagged
@@ -113,6 +114,23 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 2.56, y: 2.56}
+--- !u!95 &9564106
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164322}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 02352dfc8924ce941a0f5bf92a7700c3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11405798
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -248,7 +266,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 27bce4f84f8175248bcd829b8d431f95, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c031f719382aee9449f92fdc862d94ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
