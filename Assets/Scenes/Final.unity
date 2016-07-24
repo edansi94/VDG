@@ -334,6 +334,8 @@ GameObject:
   - 124: {fileID: 1873775992}
   - 81: {fileID: 1873775991}
   - 114: {fileID: 1873775996}
+  - 114: {fileID: 1873775997}
+  - 114: {fileID: 1873775998}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -420,6 +422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bce3a37561bc96e488dfc1429d4dfeef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneInicial: Inicio
   level0:
   - {fileID: 21300000, guid: 7070f2c5d6bc26c41bd874b37eddc34f, type: 3}
   - {fileID: 21300000, guid: ebc43937a332c014da9a23068e643930, type: 3}
@@ -439,3 +442,30 @@ MonoBehaviour:
   - {fileID: 1834209267}
   - {fileID: 132939233}
   - {fileID: 1443425863}
+--- !u!114 &1873775997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1873775990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f444bc58957f6eb4cb2ef9293565683d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curShader: {fileID: 4800000, guid: 93b18a79f0c0d8e4da4b92c895c24be5, type: 3}
+  blendTexture: {fileID: 2800000, guid: ea23099750a5b354196e649ead9ee853, type: 3}
+  blendOpacity: 0.5
+--- !u!114 &1873775998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1873775990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f727be536a0901147b0dda8c1e406315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curShader: {fileID: 4800000, guid: bb429141792243a4ba7fb4002c5eebfe, type: 3}
+  grayScaleAmount: 0.3

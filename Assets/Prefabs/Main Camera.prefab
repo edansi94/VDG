@@ -14,6 +14,8 @@ GameObject:
   - 81: {fileID: 8152852}
   - 114: {fileID: 11418418}
   - 114: {fileID: 11477094}
+  - 114: {fileID: 11487612}
+  - 114: {fileID: 11480328}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -108,8 +110,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerSettings:
-    soulAmount: 0
+    memoryAmount: 0
     energy: 100
+--- !u!114 &11480328
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 118332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f727be536a0901147b0dda8c1e406315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curShader: {fileID: 4800000, guid: bb429141792243a4ba7fb4002c5eebfe, type: 3}
+  grayScaleAmount: 0.3
+--- !u!114 &11487612
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 118332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f444bc58957f6eb4cb2ef9293565683d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curShader: {fileID: 4800000, guid: 93b18a79f0c0d8e4da4b92c895c24be5, type: 3}
+  blendTexture: {fileID: 2800000, guid: dca6b5abcbc011140a7bf1ddc8219898, type: 3}
+  blendOpacity: 1
 --- !u!124 &12477172
 Behaviour:
   m_ObjectHideFlags: 1
