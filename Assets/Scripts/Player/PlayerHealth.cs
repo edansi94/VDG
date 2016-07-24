@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour {
 
@@ -32,9 +33,16 @@ public class PlayerHealth : MonoBehaviour {
 		currentHealth -= amount;
 		PlayerSettings.setEnergy (-amount);
 		healthSlider.value = currentHealth;
-
+		Debug.Log (PlayerSettings.Energy);
 		if (currentHealth <= 0) {
-			//Death ();
+			float fadeTime = GameObject.Find ("Main Camera").GetComponent<Fading> ().BeginFade (1);
+			StartCoroutine (FadeEffect (fadeTime  * 2));
+			SceneManager.LoadScene("GameOver");
 		}
+	}
+
+	public IEnumerator FadeEffect(float fadeTime)
+	{
+		yield return new WaitForSeconds (fadeTime);
 	}
 }
