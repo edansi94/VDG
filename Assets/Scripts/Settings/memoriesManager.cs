@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class memoriesManager : MonoBehaviour {
 
     [SerializeField]
-    string loadingScene;
+    public string loadingScene;
 
     // levelScene[4] == Scene final donde se ve recuerdos tomados
     [SerializeField]
@@ -15,11 +15,22 @@ public class memoriesManager : MonoBehaviour {
     int level = 0;
 
     int[] chosenMemories = new int[4];
-	// Use this for initialization
 
     void Awake()
     {
         DontDestroyOnLoad(transform.gameObject);
+    }
+
+    void Update() {
+        if (Input.GetButtonDown("Cancel"))
+        {
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#else
+            Application.Quit();
+#endif
+
+        }
     }
 
     public void elegirRecuerdo(int noRecuerdo) {
@@ -31,16 +42,11 @@ public class memoriesManager : MonoBehaviour {
         }
     }
 
-	void elegirRecuerdo(int noRecuerdo) {
-		if (level < 5) 
-		{
-			chosenMemories [level] = noRecuerdo;
-			level++;
-			SceneManager.LoadScene (loadingScene);
-		}
-	}
-
     public string sceneToLoad() {
         return levelScene[level];
+    }
+
+    public int[] memoriasEscogidas() {
+        return chosenMemories;
     }
 }

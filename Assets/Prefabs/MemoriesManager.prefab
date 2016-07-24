@@ -43,10 +43,10 @@ MonoBehaviour:
   loadingScene: Loading
   levelScene:
   - Test
+  - Test
+  - Final
   - 
-  - 
-  - 
-  - 
+  - Final
   level: 0
 --- !u!1001 &100100000
 Prefab:
