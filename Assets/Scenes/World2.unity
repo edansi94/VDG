@@ -655,6 +655,10 @@ Prefab:
       propertyPath: objetosAPrender.Array.data[0]
       value: 
       objectReference: {fileID: 2119817253}
+    - target: {fileID: 11438306, guid: 9c3bfbfa67ad33b4793c95fcc8fbae1e, type: 2}
+      propertyPath: superBoton
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c3bfbfa67ad33b4793c95fcc8fbae1e, type: 2}
   m_IsPrefabParent: 0
@@ -1338,6 +1342,10 @@ Prefab:
     - target: {fileID: 436864, guid: f1b6a1950d5e4d74cbead87cd03ff7f0, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11423948, guid: f1b6a1950d5e4d74cbead87cd03ff7f0, type: 2}
+      propertyPath: id
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f1b6a1950d5e4d74cbead87cd03ff7f0, type: 2}

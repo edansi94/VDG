@@ -4,6 +4,9 @@ using System.Collections;
 public class Puerta : MonoBehaviour, I_Interactuable {
 
     [SerializeField]
+    bool permitida = false;
+
+    [SerializeField]
     bool oneWay = false;
 
     [SerializeField]
@@ -44,7 +47,7 @@ public class Puerta : MonoBehaviour, I_Interactuable {
     }
 
     void I_Interactuable.Interact() {
-        if ((!oneWay || !interactuado) && !cruzando)
+        if ((!oneWay || !interactuado) && !cruzando && permitida)
         {
             ((I_Interactuable)this).SuperInteract();
         }
