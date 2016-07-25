@@ -23,19 +23,30 @@ public class LoadFinal : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        memorias = GameObject.Find("MemoriesManager").GetComponent<memoriesManager>().memoriasEscogidas();
-        marco[0].sprite = level0[memorias[0]];
-        marco[1].sprite = level1[memorias[1]];
-        marco[2].sprite = level2[memorias[2]];
-        marco[3].sprite = level3[memorias[3]];
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Final"))
+        {
+            memorias = GameObject.Find("MemoriesManager").GetComponent<memoriesManager>().memoriasEscogidas();
+            marco[0].sprite = level0[memorias[0]];
+            marco[1].sprite = level1[memorias[1]];
+            marco[2].sprite = level2[memorias[2]];
+            marco[3].sprite = level3[memorias[3]];
+        }
+        
     }
 
     void Update() {
         if (Input.GetButtonDown("Submit"))
         {
-            Destroy(GameObject.Find("MemoriesManager"));
-            Destroy(GameObject.Find("BackgroundSound"));
-            SceneManager.LoadScene(sceneInicial);
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Creditos"))
+            {
+                Destroy(GameObject.Find("MemoriesManager"));
+                Destroy(GameObject.Find("BackgroundSound"));
+                SceneManager.LoadScene(sceneInicial);
+            }
+            else
+            {
+                SceneManager.LoadScene("Creditos");
+            }
         }
     }
 

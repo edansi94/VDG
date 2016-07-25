@@ -20,7 +20,7 @@ public class BackgroundSound : MonoBehaviour {
 
     void OnLevelWasLoaded(int level)
     {
-        if (level != SceneManager.GetSceneByName("Inicio").buildIndex)
+        if (level != SceneManager.GetSceneByName("Inicio").buildIndex )
         {
             if (fxSound.clip != backMusic)
             {
@@ -28,7 +28,7 @@ public class BackgroundSound : MonoBehaviour {
                 fxSound.Play();
             }
         }
-        else if (level != SceneManager.GetSceneByName("Final").buildIndex)
+        else if (level == SceneManager.GetSceneByName("Final").buildIndex || level == SceneManager.GetSceneByName("Creditos").buildIndex)
         {
             if (fxSound.clip != endMusic)
             {
