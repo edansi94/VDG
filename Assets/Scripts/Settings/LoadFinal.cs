@@ -35,7 +35,7 @@ public class LoadFinal : MonoBehaviour {
     }
 
     void Update() {
-        if (Input.GetButtonDown("Submit"))
+        if (Input.GetButtonDown("Submit") || Input.GetButtonDown("Interact"))
         {
             if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Creditos"))
             {
