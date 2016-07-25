@@ -936,7 +936,7 @@ Transform:
   - {fileID: 1457343790}
   - {fileID: 846221246}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
 --- !u!4 &1164313077 stripped
 Transform:
   m_PrefabParentObject: {fileID: 466834, guid: 323e9a36d7a6de7419193630845ffdf7, type: 2}
@@ -1838,7 +1838,8 @@ Prefab:
       propertyPath: m_BackGroundColor.b
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11421170, guid: 4218c05a14b416949ad9743613653a81, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 4218c05a14b416949ad9743613653a81, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &2000036666 stripped
