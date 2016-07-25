@@ -17,7 +17,7 @@ GameObject:
   - 114: {fileID: 11487612}
   - 114: {fileID: 11480328}
   - 114: {fileID: 11420312}
-  - 114: {fileID: 11421170}
+  - 114: {fileID: 11475856}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -47,7 +47,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0, g: 0.66896534, b: 1, a: 0.019607844}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0.019607844}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeOutTexture: {fileID: 2800000, guid: 7965c407db718a64d881899d7f15ad4d, type: 3}
   fadeSpeed: 0.8
---- !u!114 &11421170
+--- !u!114 &11475856
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

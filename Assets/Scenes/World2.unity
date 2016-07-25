@@ -533,7 +533,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 414474, guid: 9c3bfbfa67ad33b4793c95fcc8fbae1e, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 11438306, guid: 9c3bfbfa67ad33b4793c95fcc8fbae1e, type: 2}
       propertyPath: objetosAPrender.Array.data[0]
@@ -645,7 +645,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 414474, guid: 9c3bfbfa67ad33b4793c95fcc8fbae1e, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 112720, guid: 9c3bfbfa67ad33b4793c95fcc8fbae1e, type: 2}
       propertyPath: m_Name
@@ -1087,7 +1087,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 420822, guid: e27f10243cf33f14d9ae4b52e8fe8cb4, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 104994, guid: e27f10243cf33f14d9ae4b52e8fe8cb4, type: 2}
       propertyPath: m_Name
@@ -1449,7 +1449,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 466378, guid: 8714dfb544b3b8445a7326078438b0ad, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11441266, guid: 8714dfb544b3b8445a7326078438b0ad, type: 2}
       propertyPath: oneWay
@@ -1925,60 +1925,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 442888, guid: 4218c05a14b416949ad9743613653a81, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11418418, guid: 4218c05a14b416949ad9743613653a81, type: 2}
       propertyPath: objetivo
       value: 
       objectReference: {fileID: 1520284275}
-    - target: {fileID: 11420312, guid: 4218c05a14b416949ad9743613653a81, type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11480328, guid: 4218c05a14b416949ad9743613653a81, type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11487612, guid: 4218c05a14b416949ad9743613653a81, type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2043154, guid: 4218c05a14b416949ad9743613653a81, type: 2}
-      propertyPath: m_BackGroundColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2043154, guid: 4218c05a14b416949ad9743613653a81, type: 2}
-      propertyPath: m_BackGroundColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2043154, guid: 4218c05a14b416949ad9743613653a81, type: 2}
-      propertyPath: m_BackGroundColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 11421170, guid: 4218c05a14b416949ad9743613653a81, type: 2}
+    - target: {fileID: 11475856, guid: 4218c05a14b416949ad9743613653a81, type: 2}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 251457944}
+    - target: {fileID: 11475856, guid: 4218c05a14b416949ad9743613653a81, type: 2}
+      propertyPath: damageImage
+      value: 
+      objectReference: {fileID: 602479855}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4218c05a14b416949ad9743613653a81, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &2000036666 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 118332, guid: 4218c05a14b416949ad9743613653a81, type: 2}
-  m_PrefabInternal: {fileID: 2000036664}
---- !u!114 &2000036667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2000036666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 620cc185c12fa3c4fb6a678764e908b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentHealth: 0
-  healthSlider: {fileID: 251457944}
-  damageImage: {fileID: 602479855}
-  flashSpeed: 5
-  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
 --- !u!4 &2011488775 stripped
 Transform:
   m_PrefabParentObject: {fileID: 466834, guid: 323e9a36d7a6de7419193630845ffdf7, type: 2}
@@ -2020,7 +1983,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 414474, guid: 9c3bfbfa67ad33b4793c95fcc8fbae1e, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11438306, guid: 9c3bfbfa67ad33b4793c95fcc8fbae1e, type: 2}
       propertyPath: objetosAPrender.Array.data[0]
