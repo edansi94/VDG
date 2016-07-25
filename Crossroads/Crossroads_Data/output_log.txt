@@ -1,0 +1,107 @@
+Initialize engine version: 5.3.6f1 (29055738eb78)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 6800 Series (ID=0x6738)
+    Vendor:   ATI
+    VRAM:     1011 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Documentos Christian\Videojuegos\VDG\VDG\Crossroads\Crossroads_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Documentos Christian\Videojuegos\VDG\VDG\Crossroads\Crossroads_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Documentos Christian\Videojuegos\VDG\VDG\Crossroads\Crossroads_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Documentos Christian\Videojuegos\VDG\VDG\Crossroads\Crossroads_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Documentos Christian\Videojuegos\VDG\VDG\Crossroads\Crossroads_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Documentos Christian\Videojuegos\VDG\VDG\Crossroads\Crossroads_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Documentos Christian\Videojuegos\VDG\VDG\Crossroads\Crossroads_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Documentos Christian\Videojuegos\VDG\VDG\Crossroads\Crossroads_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.243 seconds
+Platform assembly: D:\Documentos Christian\Videojuegos\VDG\VDG\Crossroads\Crossroads_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Documentos Christian\Videojuegos\VDG\VDG\Crossroads\Crossroads_Data\Managed\System.dll (this message is harmless)
+desktop: 1360x768 60Hz; virtual: 1360x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.952953 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 6.944349 ms
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 250.
+Total: 0.346815 ms (FindLiveObjects: 0.028697 ms CreateObjectMapping: 0.027297 ms MarkObjects: 0.251974 ms  DeleteObjects: 0.037446 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.486450 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 733.
+Total: 0.532996 ms (FindLiveObjects: 0.054594 ms CreateObjectMapping: 0.035346 ms MarkObjects: 0.406658 ms  DeleteObjects: 0.036046 ms)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1714)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.919906 ms
+
+Unloading 172 unused Assets to reduce memory usage. Loaded Objects now: 250.
+Total: 1.115337 ms (FindLiveObjects: 0.046195 ms CreateObjectMapping: 0.033246 ms MarkObjects: 0.262823 ms  DeleteObjects: 0.772022 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.570092 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 654.
+Total: 0.399309 ms (FindLiveObjects: 0.022047 ms CreateObjectMapping: 0.029047 ms MarkObjects: 0.309718 ms  DeleteObjects: 0.038146 ms)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1714)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1714)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1714)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1714)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1714)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1714)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.965552 ms
+
+Unloading 170 unused Assets to reduce memory usage. Loaded Objects now: 250.
+Total: 0.888910 ms (FindLiveObjects: 0.027297 ms CreateObjectMapping: 0.031846 ms MarkObjects: 0.267023 ms  DeleteObjects: 0.561693 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.436405 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 273.
+Total: 0.304119 ms (FindLiveObjects: 0.012598 ms CreateObjectMapping: 0.015398 ms MarkObjects: 0.230626 ms  DeleteObjects: 0.044445 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.475252 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 267.
+Total: 0.372712 ms (FindLiveObjects: 0.034996 ms CreateObjectMapping: 0.034646 ms MarkObjects: 0.292920 ms  DeleteObjects: 0.008749 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.634486 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at BackgroundSound.OnLevelWasLoaded (Int32 level) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 278.
+Total: 0.470002 ms (FindLiveObjects: 0.039546 ms CreateObjectMapping: 0.022397 ms MarkObjects: 0.387410 ms  DeleteObjects: 0.019598 ms)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 3390 -> priority: 1 
