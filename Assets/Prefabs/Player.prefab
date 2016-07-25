@@ -110,9 +110,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0.00000023841858, y: -0.13855028}
+  m_Offset: {x: 0.00000023841858, y: -0.514137}
   serializedVersion: 2
-  m_Size: {x: 1.5794921, y: 2.2828994}
+  m_Size: {x: 1.5794921, y: 1.5317259}
 --- !u!82 &8248116
 AudioSource:
   m_ObjectHideFlags: 1
