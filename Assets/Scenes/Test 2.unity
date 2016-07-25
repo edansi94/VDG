@@ -818,7 +818,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!4 &1164313077 stripped
 Transform:
   m_PrefabParentObject: {fileID: 466834, guid: 323e9a36d7a6de7419193630845ffdf7, type: 2}
@@ -1488,7 +1488,8 @@ Prefab:
       propertyPath: m_BackGroundColor.b
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11421170, guid: 4218c05a14b416949ad9743613653a81, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 4218c05a14b416949ad9743613653a81, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &2000036666 stripped
