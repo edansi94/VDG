@@ -4,16 +4,28 @@ using System.Collections;
 public class speechBubble : MonoBehaviour {
 
 	public Canvas dialogBubble;
+    [SerializeField]
+    AudioClip hablar;
 
-	void Start()
+    private AudioSource fuente;
+
+    bool hablando = false;
+
+    void Start()
 	{
 		dialogBubble.enabled = false;
-	}
+        fuente = GetComponent<AudioSource>();
+    }
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.tag == "Player") {
 			dialogBubble.enabled = true;
+            if (!hablando)
+            {
+                hablando = true;
+                fuente.PlayOneShot(hablar);
+            }
 		}
 	}
 
@@ -21,6 +33,7 @@ public class speechBubble : MonoBehaviour {
 	{
 		if (other.tag == "Player") {
 			dialogBubble.enabled = false;
-		}
+            hablando = false;
+        }
 	}
 }
