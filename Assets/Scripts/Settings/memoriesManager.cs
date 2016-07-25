@@ -31,6 +31,7 @@ public class memoriesManager : MonoBehaviour {
     void Awake()
     {
         DontDestroyOnLoad(transform.gameObject);
+        Cursor.visible = false;
     }
 
     void Update() {
